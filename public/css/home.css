@@ -1,0 +1,93 @@
+main{
+    width: 110%;
+    padding: 0;
+    margin-top: 77px;
+    box-shadow: none;
+    border: 0px;
+}
+
+.home_box1{
+    background: url(https://cdn.pixabay.com/photo/2019/05/13/20/38/team-4200837_960_720.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+
+.home_box1::before{
+    content: "";
+    opacity: 0.5;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 30px;
+    background-color: #000;
+  
+}
+
+.home_box1 h1  {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 10rem;
+}
+
+#slide > li::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+}
+
+.home_box2{
+    text-align: center;
+    position: relative;
+}
+.home_box2 > video{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.home_box2::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+}
+
+.home_box2 h1  {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.videoplayer {
+    position: sticky;
+    /*16:9*의 비율*/
+    width: 100%;
+    /* width의 크기에 따라 자동적으로 height의 비율을 조정함 */
+    padding-bottom: 56.25%;
+  }
+  .videoplayer .videoplayer-iframe {
+    /* videoplayer라는 컨테이너 안에 비디오를 고정시키는거임
+    그래서 Videoplayer 비율이 넘어가면 안나오게됨*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }

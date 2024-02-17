@@ -1,0 +1,55 @@
+
+  select option[value=""][disabled]{
+    display: none;
+  }
+
+  main{
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/07/17/15/balloon-3206530_960_720.jpg");
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  main::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+  }
+
+  main{
+    text-align: center;
+    position: relative;
+  }
+  
+ form{
+  z-index: 1;
+  color: white;
+ }
+
+ label{
+  font-size: 1.2rem;
+  margin-top:8px;
+ }
+
+ input, select{
+  height: 3.4rem;
+  width: 13rem;;
+  outline: none;
+  border-radius: 8pt;
+ }
+
+ .sign-up-button{
+  color: white;
+  padding: 10px;
+  width: 200px;
+  font-size: 2rem;
+  border-color: white;
+ }
+ 
+ .sign-up-button:hover{
+  background-color: #000;
+ }

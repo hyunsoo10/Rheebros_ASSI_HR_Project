@@ -1,0 +1,181 @@
+.navbar{
+  position: fixed !important;
+  width: 100% !important;
+  top: 0px;
+  z-index: 999;
+  height: 70px;
+
+}
+
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  float: right;
+}
+.collapse {
+  display: flex !important;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.container-fluid {
+  /* width: 80% !important; */
+}
+nav {
+  transition: all 0.3s ease;
+}
+
+nav.active{
+  /* height: 8% !important; */
+  background-color: rgba(0 0 0 / 70%) !important;
+}
+
+nav.active .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+nav.active .nav-link{
+  color: #fff !important;
+}
+
+nav.active .img-logo {
+  content: url(/images/assi_logo_white.png);
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+
+#bar{
+  display: none;
+}
+
+
+.dropdown-menu > li{
+  display: block;
+
+}
+
+/* #sub-menu , #sub-menu2{
+  margin: 0;
+  padding: 0;
+  left: -11.2px;
+  top:60px;
+  list-style: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid black;
+  background-color: rgba(107 106 106 / 30%);
+
+}
+
+#sub-menu > li > a{
+  font-size: 11px;
+  font-weight: 600;
+  padding-bottom: 0;
+  
+}
+#sub-menu2 > li > a{
+  font-size: 11px;
+  font-weight: 600;
+  padding-bottom: 0;
+  
+}
+
+.navbar__menu > li:hover #sub-menu{
+  opacity: 1;
+  visibility: visible;
+  border: 1px solid black;
+  background-color: rgba(107 106 106 / 30%);
+}
+.navbar__menu > li:hover #sub-menu2{
+  opacity: 1;
+  visibility: visible;
+  border: 1px solid black;
+  background-color: rgba(107 106 106 / 30%);
+} */
+
+/* nav.active li:hover #sub-menu{
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0 0 0 / 85%);
+}
+nav.active li:hover #sub-menu2{
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0 0 0 / 85%);
+} */
+
+
+@media (min-width: 875px)and (max-width: 992px) {
+  .navbar-nav{
+    flex-direction: row !important;
+    
+  }
+}
+@media all and (max-width: 875px) {
+  nav li{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  nav{
+    border: 1px solid grey;
+  }
+  .navbar-nav{
+    margin-right: 50px !important;
+  }
+  /* nav.active{
+    height: 100px !important;
+  } */
+  .navbar__menu {
+   flex-direction: column !important;
+   display: none !important; 
+
+  }
+  .nav-item{
+    display: none !important;
+  }
+  #bar{
+    line-height: 60px;
+    float: right;
+    margin-right: 10px;
+    color: rgb(177, 31, 31);
+    display: block;
+  }
+  ul.active{
+    display: block !important;
+    height: 200px !important;
+  }
+  nav.mobile_active {
+    height: 275px;
+  }
+
+  .collapse {
+    justify-content: flex-end;
+  }
+  .active{
+    display: block;
+  }
+  .nav-link{
+    font-size: 2.5rem;
+  }
+  #login_box{
+    position: absolute;
+    top: 210px;
+    right: 0px;
+  }
+  #login_box .btn{
+    font-size: 2rem;
+  }
+}
+
+

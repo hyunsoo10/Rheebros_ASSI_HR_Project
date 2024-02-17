@@ -1,0 +1,125 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.select-box{
+  padding: 10px;
+  position: relative;
+  /* top: 45%;
+  left: 33%;
+  transform: translate(-50%,-50%); */
+  height: 30px;
+  /* width:30px; */
+  border-radius: 30px;
+}
+
+.search-box{
+  padding: 10px;
+  position: relative;
+  /* top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  height: 30px;
+  background-color: #fff;
+  border: 1.5px solid #2d2e2e;
+  border-radius: 30px;
+  transition: 0.4s;
+  width:30px;
+}
+
+#changeTest{
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1.5px solid #2d2e2e;
+}
+
+.search-box{
+  box-shadow: 1px 1px 3.5px 2.5px #2d2e2e;
+  width: 282px;
+}
+
+/* hover effect */
+/* .search-box:hover{
+  box-shadow: 0px 0px .5px 1px #51e3d4;
+  width: 282px;
+} */
+
+.search-btn{
+  text-decoration: none;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #51e3d4;
+}
+.search-box:hover > .search-btn{
+  background-color: #fff;
+}
+.search-txt{
+  display: flex;
+  padding: 0;
+  width: 0px;
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  font-size: 1rem;
+  line-height: 30px;
+  transition: .4s;
+}
+
+.search-box .search-txt{
+  width: 200px;
+  padding: 0 6px;
+}
+
+/* hover effect */
+/* .search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+} */
+
+/* *, ::after, ::before{
+  box-sizing: inherit;
+} */
+
+.search-box, .select-box, .search-txt, .search-btn{
+  box-sizing: unset;
+}
+.search-btn {
+  border: none;
+}
+
+
+@media all and (max-width: 875px) {
+  .search-box .search-txt{
+    width: 100px;
+    font-size: 2.3rem;
+  }
+  
+  .new_employee_btn{
+    width: 120px;
+    height: 50px;
+    font-size: 2.3rem;
+    display: none;
+  }
+
+  .storelist, .storelist2{
+    display: none;
+  }
+
+  .search-box{
+    width: 150px;
+  }
+  main{
+    padding: 5px;
+  }
+  .user_list{
+    width: 350px;
+  }
+}
